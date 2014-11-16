@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>still hungry? or satisfied?</h1>
+    <p class="lead">Restaurant Reviewer is a place to review your favorite restaurants and watch other reviews.</p>
+    <p><a href="~/Ratings/Create" class="btn btn-primary btn-lg">Rate your Restaurant Here &raquo;</a></p>
+    <br />
+    <form action="/Ratings/SearchRestaurants" method="get">
+        <table>
+            <tr>
+                <td><input type="text" name="s" /> </td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn btn-primary btn-lg" value="Find Restaurants" /></td>
+            </tr>
+        </table>
+   
+    </form>  
+</div>
+
