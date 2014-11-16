@@ -20,10 +20,11 @@ namespace RestaurantReviews.Models
 
         [Required]
         [StringLength(250)]
-        [Display(Name = "Restaurant Name")]
+        [Display(Name = "Name")]
         public string Name { get; set; }
 
         [StringLength(250)]
+        [EmailAddress]
         public string Email { get; set; }
 
         [StringLength(250)]
