@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RestaurantReviews" Class="ReportDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=MikeW530\SQLEXP14;Initial Catalog=RestaurantReviews;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="RestaurantReviewsConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetRatingsReport" Method="GetRatingsReport">
+    <ElementType Name="GetRatingsReportResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="[Total Ratings]" Member="Total_Ratings" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Average Rating]" Member="Average_Rating" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

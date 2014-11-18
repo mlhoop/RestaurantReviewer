@@ -13,6 +13,7 @@ namespace RestaurantReviews.Controllers
     public class RatingsController : Controller
     {
         private RestaurantReviewsDB db = new RestaurantReviewsDB();
+      
 
         // GET: Ratings
         public ActionResult Index()
@@ -134,13 +135,7 @@ namespace RestaurantReviews.Controllers
             return View(restaurants);
         }
 
-        public ActionResult RatingsReport()
-        {
-            var restaurants = db.Restaurants.ToList();
-            
-            return View(restaurants);
-            
-        }
+
 
         protected override void Dispose(bool disposing)
         {
@@ -150,6 +145,8 @@ namespace RestaurantReviews.Controllers
             }
             base.Dispose(disposing);
         }
+
+    
 
     }
 }
